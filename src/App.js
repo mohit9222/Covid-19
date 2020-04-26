@@ -5,6 +5,7 @@ import { fetchData } from './api/';
 import styles from './App.module.css';
 
 import image from './images/image.png';
+import LeftSideBar from './components/LeftSideBar/index'
 
 class App extends React.Component {
   state = {
@@ -28,12 +29,15 @@ class App extends React.Component {
     const { data, country } = this.state;
 
     return (
+     <div>
+       <LeftSideBar />     
       <div className={styles.container}>
         <img className={styles.image} src={image} alt="COVID-19" />
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} /> 
       </div>
+      </div> 
     );
   }
 }
