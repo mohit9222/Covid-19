@@ -11,7 +11,7 @@ function App() {
   const navLinks = [
 		{
 			text: 'Home',
-			path: '/',
+			path: '/Covid-19',
 			icon: 'ion-ios-home'
 		},
 		{
@@ -36,7 +36,7 @@ function App() {
 				linkColor="#777"
 			/>
 			<Router>
-				<Home path="/" />
+				<Home path="/Covid-19" />
 				<ProtectiveMeasures path="/ProtectiveMeasures" />
 				<ImportantInformation path="/ImportantInformation" />
 			</Router>
