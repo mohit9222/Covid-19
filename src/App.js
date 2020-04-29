@@ -1,45 +1,47 @@
 import React from 'react';
+import { Router } from '@reach/router'
+import Home from './pages/Home.jsx'
+import ProtectiveMeasures from '../src/pages/ProtectiveMeasures'
+import ImportantInformation from './pages/ImportantInformation'
+import ResponsiveNavigation from './components/ResponsiveNavigation'
+import logo from './covid.jpg';
+import './App.css';
 
-import { Cards, CountryPicker, Chart } from './components';
-import { fetchData } from './api/';
-import styles from './App.module.css';
+function App() {
+  const navLinks = [
+		{
+			text: 'Home',
+			path: '/',
+			icon: 'ion-ios-home'
+		},
+		{
+			text: 'Protective Measures',
+			path: '/ProtectiveMeasures',
+			icon: 'ion-ios-megaphone'
+		},
+		{
+			text: 'Important Information',
+			path: '/ImportantInformation',
+			icon: 'ion-ios-briefcase'
+		}
+	]
 
-import image from './images/image.png';
-import LeftSideBar from './components/LeftSideBar/index'
-
-class App extends React.Component {
-  state = {
-    data: {},
-    country: '',
-  }
-
-  async componentDidMount() {
-    const data = await fetchData();
-
-    this.setState({ data });
-  }
-
-  handleCountryChange = async (country) => {
-    const data = await fetchData(country);
-
-    this.setState({ data, country: country });
-  }
-
-  render() {
-    const { data, country } = this.state;
-
-    return (
-     <div>
-       <LeftSideBar />     
-      <div className={styles.container}>
-        <img className={styles.image} src={image} alt="COVID-19" />
-        <Cards data={data} />
-        <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Chart data={data} country={country} /> 
-      </div>
-      </div> 
-    );
-  }
+	return (
+		<div className="App">
+			<ResponsiveNavigation
+				navLinks={ navLinks }
+				logo={ logo }
+				background="#fff"
+				hoverBackground="#ddd"
+				linkColor="#777"
+			/>
+			<Router>
+				<Home path="/" />
+				<ProtectiveMeasures path="/ProtectiveMeasures" />
+				<ImportantInformation path="/ImportantInformation" />
+			</Router>
+		</div>
+	);
 }
 
 export default App;
