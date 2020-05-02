@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import image from '../images/Protective.PNG'
 import styles from '../App.module.css';
 import { UncontrolledCollapse, Card, CardBody, Button,   Row, Col } from 'reactstrap';
-import Footer from './Footer';
 
 class ProtectiveMeasures extends Component {
     render () {

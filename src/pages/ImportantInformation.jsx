@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import image from '../images/imp.PNG'
 import styles from '/React/covid-19/src/App.module.css'
 import { Jumbotron } from 'reactstrap';
-import Footer from './Footer'
 
 class ImportantInformation extends Component {
    render() {

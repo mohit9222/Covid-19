@@ -5,7 +5,6 @@ import { fetchData } from '../api/';
 import styles from '../App.module.css';
 
 import image from '../images/image.png'
-import Footer from './Footer';
 
 class Home extends Component {
     state = {

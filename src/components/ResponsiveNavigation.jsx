@@ -1,37 +1,32 @@
-import React, { useState } from 'react';
-import { Link } from "@reach/router";
+import React from 'react';
+import * as ReactBootStrap from "react-bootstrap";
+import './Navbar.css';
+import covid from '../images/covid.jpg'
+import {
+    Link
+  } from "react-router-dom";
 
-function ResponsiveNavigation({ background, hoverBackground, linkColor, navLinks, logo }) {
-    const [ navOpen, setNavOpen ] = useState(0)
-    const [ hoverIndex, setHoverIndex ] = useState(-1)
-    return (
-        <nav
-            className="responsive-toolbar"
-            style={{ background: background }}>
-            <ul
-                style={{ background: background }}
-                className={ navOpen ? 'active' : '' }
-            >
-                <figure className="image-logo" onClick={ () => { setNavOpen(!navOpen) } }>
-                    <img src={ logo } height="40px" width="40px" alt="toolbar-logo" />
-                </figure>
-                { navLinks.map((link, index) => 
-                    <li
-                        key={ index }
-                        onMouseEnter={ () => { setHoverIndex(index) } }
-                        onMouseLeave={ () => { setHoverIndex(-1) } }
-                        style={{ background: hoverIndex === index ? (hoverBackground || '#999') : '' }}
-                    >
-                        <Link
-                            to={link.path}
-                            style={{ color: linkColor }}
-                        >   { link.text }
-                            <i className={ link.icon } />
-                        </Link>
-                    </li>
-                )}
-            </ul>
-        </nav>
+const ResponsiveNavigation = () => {
+    return(
+        <div className="App" id="Navbar">
+    <ReactBootStrap.Navbar collapseOnSelect expand="xl" variant="dark">
+  <ReactBootStrap.Navbar.Brand href="#home"><img className='img' src={covid} alt="covid-19" /></ReactBootStrap.Navbar.Brand>
+  <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
+    <ReactBootStrap.Nav className="mr-auto"> 
+    <Link to="/Covid-19">
+    <ReactBootStrap.Nav.Link href="#Covid-19"><i className="ion-ios-home" /> Home</ReactBootStrap.Nav.Link>
+    </Link>
+    <Link to="/ProtectiveMeasures">
+    <ReactBootStrap.Nav.Link href="#ProtectiveMeasures"><i className="ion-ios-megaphone" /> Protective Measures</ReactBootStrap.Nav.Link>
+    </Link>
+    <Link to="/ImportantInformation">
+    <ReactBootStrap.Nav.Link href="#ImportantInformation"><i className="ion-ios-briefcase" /> Important Information</ReactBootStrap.Nav.Link>
+    </Link>
+    </ReactBootStrap.Nav>
+  </ReactBootStrap.Navbar.Collapse>
+</ReactBootStrap.Navbar>
+        </div>
     )
 }
 

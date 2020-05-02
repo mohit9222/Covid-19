@@ -1,0 +1,33 @@
+#Navbar {
+    background-color: white;
+    box-shadow: 2px 0 2px #9a9898;
+}
+
+.img {
+    height: 8vmin;
+  pointer-events: none;
+}
+
+.mr-auto .navbar-nav {
+    font-size: 1em !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link  {
+    color: rgba(14, 13, 13, 0.5);
+}
+
+.navbar-dark .navbar-toggler-icon {
+    color: black
+}
+
+.navbar-toggler {    
+    background-color: #212529;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover { 
+    color: #212529; 
+}
