@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Covid-19/static/css/main.8c7732b5.chunk.css",
-    "main.js": "/Covid-19/static/js/main.f8fe6527.chunk.js",
-    "main.js.map": "/Covid-19/static/js/main.f8fe6527.chunk.js.map",
+    "main.css": "/Covid-19/static/css/main.ea70442f.chunk.css",
+    "main.js": "/Covid-19/static/js/main.11b137b3.chunk.js",
+    "main.js.map": "/Covid-19/static/js/main.11b137b3.chunk.js.map",
     "runtime-main.js": "/Covid-19/static/js/runtime-main.f37b298f.js",
     "runtime-main.js.map": "/Covid-19/static/js/runtime-main.f37b298f.js.map",
     "static/css/2.de424728.chunk.css": "/Covid-19/static/css/2.de424728.chunk.css",
-    "static/js/2.11eb29bb.chunk.js": "/Covid-19/static/js/2.11eb29bb.chunk.js",
-    "static/js/2.11eb29bb.chunk.js.map": "/Covid-19/static/js/2.11eb29bb.chunk.js.map",
+    "static/js/2.56c22085.chunk.js": "/Covid-19/static/js/2.56c22085.chunk.js",
+    "static/js/2.56c22085.chunk.js.map": "/Covid-19/static/js/2.56c22085.chunk.js.map",
     "index.html": "/Covid-19/index.html",
-    "precache-manifest.fde5f4f71348ac2de318b4378d2a75f8.js": "/Covid-19/precache-manifest.fde5f4f71348ac2de318b4378d2a75f8.js",
+    "precache-manifest.8411262f3d7e72e3b7db7f105371136a.js": "/Covid-19/precache-manifest.8411262f3d7e72e3b7db7f105371136a.js",
     "service-worker.js": "/Covid-19/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/Covid-19/static/css/2.de424728.chunk.css.map",
-    "static/css/main.8c7732b5.chunk.css.map": "/Covid-19/static/css/main.8c7732b5.chunk.css.map",
-    "static/js/2.11eb29bb.chunk.js.LICENSE.txt": "/Covid-19/static/js/2.11eb29bb.chunk.js.LICENSE.txt",
+    "static/css/main.ea70442f.chunk.css.map": "/Covid-19/static/css/main.ea70442f.chunk.css.map",
+    "static/js/2.56c22085.chunk.js.LICENSE.txt": "/Covid-19/static/js/2.56c22085.chunk.js.LICENSE.txt",
     "static/media/Protective.PNG": "/Covid-19/static/media/Protective.8e54fe85.PNG",
     "static/media/covid.jpg": "/Covid-19/static/media/covid.ca2b460a.jpg",
     "static/media/image.png": "/Covid-19/static/media/image.d7265326.png",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.f37b298f.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.11eb29bb.chunk.js",
-    "static/css/main.8c7732b5.chunk.css",
-    "static/js/main.f8fe6527.chunk.js"
+    "static/js/2.56c22085.chunk.js",
+    "static/css/main.ea70442f.chunk.css",
+    "static/js/main.11b137b3.chunk.js"
   ]
 }
