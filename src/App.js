@@ -3,6 +3,7 @@ import Home from './pages/Home.jsx'
 import ProtectiveMeasures from '../src/pages/ProtectiveMeasures'
 import ImportantInformation from './pages/ImportantInformation'
 import ResponsiveNavigation from './components/ResponsiveNavigation'
+import HomeRemedies from './pages/HomeRemedies'
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -27,6 +28,9 @@ function App() {
           	</Route>
 			<Route path="/ImportantInformation" component={ImportantInformation}>
               <ImportantInformation />
+          	</Route>
+			<Route path="/HomeRemedies" component={HomeRemedies}>
+              <HomeRemedies />
           	</Route>
 			</Switch>
 			</Router>
