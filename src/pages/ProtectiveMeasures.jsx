@@ -19,7 +19,7 @@ class ProtectiveMeasures extends Component {
                 <UncontrolledCollapse toggler="#hands" style={{ marginTop: '1rem'}}>
                 <Card>
                     <CardBody>
-                    <p>Regularly and thoroughly clean your hands with an alcohol-based hand rub 
+                    <p align='justify'>Regularly and thoroughly clean your hands with an alcohol-based hand rub 
                     or wash them with soap and water.<br />
                     <b>Why?</b> Washing your hands with soap and water or using alcohol-based hand 
                     rub kills viruses that may be on your hands.</p>
@@ -42,7 +42,7 @@ class ProtectiveMeasures extends Component {
                 <UncontrolledCollapse toggler="#distancing" style={{ marginTop: '1rem'}}>
                 <Card>
                     <CardBody>
-                    <p>Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.<br />
+                    <p align='justify'>Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.<br />
                     <b>Why?</b> When someone coughs or sneezes they spray small liquid droplets from their nose or mouth
                     which may contain virus. If you are too close, you can breathe in the droplets, including the 
                     COVID-19 virus if the person coughing has the disease.</p>
@@ -65,7 +65,7 @@ class ProtectiveMeasures extends Component {
             <UncontrolledCollapse toggler="#face" style={{ marginTop: '1rem'}}>
             <Card>
                 <CardBody>
-                <p><b>Why?</b> Hands touch many surfaces and can pick up viruses. Once contaminated, hands can
+                <p align='justify'><b>Why?</b> Hands touch many surfaces and can pick up viruses. Once contaminated, hands can
                 transfer the virus to your eyes, nose or mouth. From there, the virus can enter your
                 body and can make you sick.</p>
                 </CardBody>
@@ -87,7 +87,7 @@ class ProtectiveMeasures extends Component {
             <UncontrolledCollapse toggler="#Hygines" style={{ marginTop: '1rem'}}>
             <Card>
                 <CardBody>
-                <p>Make sure you, and the people around you, follow good respiratory hygiene.
+                <p align='justify'>Make sure you, and the people around you, follow good respiratory hygiene.
                 This means covering your mouth and nose with your bent elbow or tissue when
                 you cough or sneeze. Then dispose of the used tissue immediately.<br />
                 <b>Why?</b> Droplets spread virus. By following good respiratory hygiene you 

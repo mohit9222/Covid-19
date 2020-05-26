@@ -14,7 +14,6 @@ import Home_reme from '../images/Home_reme.jpg'
             <Col sm="3"> 
             </Col>
             <Col sm="6"> 
-            <img className='img' src={Home_remedies} style={{marginTop: '3%', marginBottom: '5%'}} alt="covid-19" />
             </Col>
             <Col sm="3"> 
             </Col>

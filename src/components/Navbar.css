@@ -34,4 +34,36 @@
 
 .navbar-dark .navbar-nav .nav-link:hover { 
     color: white; 
+    text-decoration: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.MuiPaper-root {
+    background-color: #0f0f0fe0 !important;
+}
+
+.MuiTypography-colorTextSecondary {
+    color: white !important;
+}
+
+.MuiTypography-body2 {
+    color: white !important;
+}
+
+.Cards_infected__2cF2L {
+    border-bottom: 10px solid #0027ff;
+}
+
+.navbar { 
+    padding: .1rem;
+}
+
+.Head {
+    background-image: url(../images/back1.jpg) !important;
+    width: 100%;
+    height: auto;
+    background-size: cover;
 }

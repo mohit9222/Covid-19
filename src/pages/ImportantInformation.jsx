@@ -7,7 +7,6 @@ class ImportantInformation extends Component {
    render() {
        return (
         <div>    
-        <img className={styles.Protective} src={image} alt="Importat info" />
     <div style={{paddingLeft: "10%", paddingRight: "10%", paddingTop: '3%'}}>
       <Jumbotron>
         <h3 className="display-5" style={{textAlign: "justify", textAlignLast: "left"}}>If you have fever, cough and difficulty breathing, seek medical care early</h3>

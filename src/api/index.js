@@ -1,6 +1,8 @@
 import axios from 'axios';
 
 const url = 'https://covid19.mathdro.id/api';
+const url1 = 'http://covid19-india-adhikansh.herokuapp.com/states'
+const url2 = 'http://covid19-india-adhikansh.herokuapp.com/state'
 
 export const fetchData = async (country) => {
   let changeableUrl = url;
@@ -18,6 +20,23 @@ export const fetchData = async (country) => {
   }
 };
 
+export const fetchDataState = async (state) => {
+  let changeableUrlState = `${url2}/Karnataka`;
+
+  if (state) {
+    changeableUrlState = `${url2}/${state}`;
+  }
+
+  try {
+    const { data: { data: {0: { confirmed, cured, death, total }} } } = await axios.get(changeableUrlState);
+    //console.log({ data: { data: {0: { confirmed, cured, death, total }} }});
+    return  { confirmed, cured, death, total };
+  } catch (error) {
+    return error;
+  }
+};
+
+
 export const fetchDailyData = async () => {
   try {
     const { data } = await axios.get(`${url}/daily`);
@@ -33,6 +52,16 @@ export const fetchCountries = async () => {
     const { data: { countries } } = await axios.get(`${url}/countries`);
 
     return countries.map((country) => country.name);
+  } catch (error) {
+    return error;
+  }
+};
+
+export const fetchStates = async () => {
+  try {
+    const { data: {state}} = await axios.get(`${url1}`);
+    //console.log({ data: {state}});
+    return state.map((state) => state.name);
   } catch (error) {
     return error;
   }

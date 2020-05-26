@@ -4,6 +4,7 @@ import ProtectiveMeasures from '../src/pages/ProtectiveMeasures'
 import ImportantInformation from './pages/ImportantInformation'
 import ResponsiveNavigation from './components/ResponsiveNavigation'
 import HomeRemedies from './pages/HomeRemedies'
+import IndiaDetails from './pages/IndiaDetails'
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -22,6 +23,9 @@ function App() {
 			<Switch>
 			<Route path="/Covid-19" component={Home}>
               <Home />
+          	</Route>
+			<Route path="/IndiaDetails" component={IndiaDetails}>
+              <IndiaDetails />
           	</Route>
 			<Route path="/ProtectiveMeasures" component={ProtectiveMeasures}>
               <ProtectiveMeasures />

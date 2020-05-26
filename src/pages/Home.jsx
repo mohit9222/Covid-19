@@ -7,7 +7,7 @@ import styles from '../App.module.css';
 import image from '../images/image.png'
 
 class Home extends Component {
-    state = {
+        state = {
         data: {},
         country: '',
       }
@@ -29,10 +29,9 @@ class Home extends Component {
 
         return (
             <div className={styles.container}>
-        <img className={styles.image} src={image} alt="COVID-19" />
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Chart data={data} country={country} /> 
+        <Chart data={data} country={country} />
       </div>
     );
   }
