@@ -1,7 +1,6 @@
 import React from 'react';
 import * as ReactBootStrap from "react-bootstrap";
 import './Navbar.css';
-import covid from '../images/covid_img.png'
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import {
     Link
